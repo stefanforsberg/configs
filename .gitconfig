@@ -1,0 +1,18 @@
+[alias]
+	s = status
+	FU = reset --hard
+[user]
+	name = Stefan Forsberg
+	email = cykelkatalogen@popkram.com
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = "'/C/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' $LOCAL $REMOTE"
+[difftool]
+	prompt = false
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = "'/C/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' --merge --result=$MERGED $LOCAL $BASE $REMOTE"
+[push]
+	default = current
